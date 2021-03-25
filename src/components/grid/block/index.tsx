@@ -1,17 +1,14 @@
 import React, { FC } from 'react'
 
+import { Container } from './styles'
+
 interface BlockProps {
   columnIndex: number
   rowIndex: number
 }
 
 const Block: FC<BlockProps> = ({ columnIndex, rowIndex }) => {
-  return (
-    <div data-cy="block">
-      |{rowIndex}
-      {columnIndex}|
-    </div>
-  )
+  return <Container data-cy={`block${rowIndex}-${columnIndex}`} />
 }
 
 export default Block
