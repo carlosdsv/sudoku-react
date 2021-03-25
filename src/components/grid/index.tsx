@@ -1,9 +1,13 @@
 import React, { FC, Children } from 'react'
-
+import { createFullGrid } from 'utils'
 import Block from './block'
 import { Container, Row } from './styles'
+import { Grid } from 'typings'
 
-const Grid: FC = () => {
+const SudokuGrid: FC = () => {
+  const grid: Grid = createFullGrid()
+  console.log(grid)
+
   return (
     <Container data-cy="grid-container">
       {Children.toArray(
@@ -21,4 +25,4 @@ const Grid: FC = () => {
   )
 }
 
-export default Grid
+export default SudokuGrid

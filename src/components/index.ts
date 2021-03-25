@@ -1,2 +1,2 @@
-export { default as Grid } from './grid'
+export { default as SudokuGrid } from './grid'
 export * from './styles'
