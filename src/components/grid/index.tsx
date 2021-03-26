@@ -6,6 +6,7 @@ import { createGrid } from 'reducers'
 
 import Block from './block'
 import { Container, Row } from './styles'
+import { Index } from 'typings'
 
 const SudokuGrid: FC = () => {
   const dispatch = useDispatch<Dispatch<AnyAction>>()
@@ -21,7 +22,10 @@ const SudokuGrid: FC = () => {
           <Row data-cy="grid-row-container">
             {Children.toArray(
               [...Array(9)].map((_, columnIndex) => (
-                <Block columnIndex={columnIndex} rowIndex={rowIndex} />
+                <Block
+                  columnIndex={columnIndex as Index}
+                  rowIndex={rowIndex as Index}
+                />
               ))
             )}
           </Row>
