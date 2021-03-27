@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 
-import { Card, Content, SudokuGrid, Title } from 'components'
+import { Card, Content, NumbersBar, SudokuGrid, Title } from 'components'
 import { configureStore, unregister } from 'core'
 import { GlobalStyles, theme } from 'styles'
 import reportWebVitals from 'reportWebVitals'
@@ -17,6 +17,7 @@ ReactDOM.render(
           <Title data-cy="title">Sudoku</Title>
           <Card data-cy="card">
             <SudokuGrid />
+            <NumbersBar />
           </Card>
         </Content>
       </Provider>
