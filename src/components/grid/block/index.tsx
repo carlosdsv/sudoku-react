@@ -14,15 +14,20 @@ interface BlockProps {
 
 interface State {
   isActive: boolean
+  isPuzzle: boolean
   value: N
 }
 
 const Block: FC<BlockProps> = ({ columnIndex, rowIndex }) => {
   const state = useSelector<Reducer, State>(
-    ({ workingGrid, selectedBlock }) => ({
+    ({ challengeGrid, selectedBlock, workingGrid }) => ({
       isActive: selectedBlock
         ? selectedBlock[0] === rowIndex && selectedBlock[1] === columnIndex
         : false,
+      isPuzzle:
+        challengeGrid && challengeGrid[rowIndex][columnIndex] !== 0
+          ? true
+          : false,
       value: workingGrid ? workingGrid[rowIndex][columnIndex] : 0,
     })
   )
@@ -37,6 +42,7 @@ const Block: FC<BlockProps> = ({ columnIndex, rowIndex }) => {
       active={state.isActive}
       data-cy={`block${rowIndex}-${columnIndex}`}
       onClick={handleClick}
+      puzzle={state.isPuzzle}
     >
       {state.value === 0 ? '' : state.value}
     </Container>

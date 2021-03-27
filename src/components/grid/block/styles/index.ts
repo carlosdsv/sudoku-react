@@ -2,10 +2,11 @@ import styled, { css } from 'styled-components'
 
 interface Props {
   active?: boolean
+  puzzle?: boolean
 }
 
 export const Container = styled.div<Props>`
-  ${({ active, theme }) => css`
+  ${({ active, puzzle, theme }) => css`
     align-items: center;
     background-color: ${active ? theme.colors.blue : theme.colors.white};
     border: solid 1px ${theme.colors.black};
@@ -15,7 +16,7 @@ export const Container = styled.div<Props>`
     flex-shrink: 0;
     flex-basis: 0;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: ${puzzle ? 'bolder' : 'normal'};
     height: auto;
     justify-content: center;
     transition: ${theme.transition};
