@@ -1,6 +1,8 @@
 import { BlockCoordinates, Grid } from 'typings'
 
 export interface Reducer {
-  grid?: Grid
+  challengeGrid?: Grid
   selectedBlock?: BlockCoordinates
+  solvedGrid?: Grid
+  workingGrid?: Grid
 }

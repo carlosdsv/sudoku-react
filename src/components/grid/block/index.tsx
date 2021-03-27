@@ -18,12 +18,14 @@ interface State {
 }
 
 const Block: FC<BlockProps> = ({ columnIndex, rowIndex }) => {
-  const state = useSelector<Reducer, State>(({ grid, selectedBlock }) => ({
-    isActive: selectedBlock
-      ? selectedBlock[0] === rowIndex && selectedBlock[1] === columnIndex
-      : false,
-    value: grid ? grid[rowIndex][columnIndex] : 0,
-  }))
+  const state = useSelector<Reducer, State>(
+    ({ workingGrid, selectedBlock }) => ({
+      isActive: selectedBlock
+        ? selectedBlock[0] === rowIndex && selectedBlock[1] === columnIndex
+        : false,
+      value: workingGrid ? workingGrid[rowIndex][columnIndex] : 0,
+    })
+  )
   const dispatch = useDispatch<Dispatch<AnyAction>>()
   function handleClick() {
     if (!state.isActive) {
