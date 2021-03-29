@@ -3,11 +3,11 @@ import useMousetrap from 'react-hook-mousetrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { AnyAction, Dispatch } from 'redux'
 
-import { createGrid, fillBlock, Reducer, selectBlock } from 'reducers'
+import { createGrid, fillBlock, Reducer, selectBlock } from '../../reducers'
 
 import Block from './block'
 import { Container, Row } from './styles'
-import { BlockCoordinates, Grid, Index, N, Numbers } from 'typings'
+import { BlockCoordinates, Grid, Index, N, Numbers } from '../../typings'
 
 interface State {
   selectedBlock?: BlockCoordinates

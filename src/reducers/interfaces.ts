@@ -1,4 +1,4 @@
-import { BlockCoordinates, Grid } from 'typings'
+import { BlockCoordinates, Grid } from '../typings'
 
 export interface Reducer {
   challengeGrid?: Grid

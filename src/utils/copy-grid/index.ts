@@ -1,4 +1,4 @@
-import { Grid, Index } from 'typings'
+import { Grid, Index } from '../../typings'
 
 function copyGrid(grid: Grid): Grid {
   const gridCopy: Grid = [

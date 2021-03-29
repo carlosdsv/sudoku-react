@@ -1,5 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components'
-import { Theme } from 'typings/theme'
+import { Theme } from '../typings/theme'
 
 export default createGlobalStyle<{ theme: Theme }>`
   ${({ theme }) => css`

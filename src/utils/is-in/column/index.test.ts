@@ -1,4 +1,4 @@
-import { Grid } from 'typings'
+import { Grid } from '../../../typings'
 import isInColumn from './'
 
 describe('isInColumn', () => {

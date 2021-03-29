@@ -1,4 +1,4 @@
-import { Grid, Square } from 'typings'
+import { Grid, Square } from '../../typings'
 
 interface identifySquareProps {
   grid: Grid
