@@ -15,7 +15,7 @@ import {
 import { configureStore, register } from './core'
 import { GlobalStyles, theme } from './styles'
 
-import reportWebVitals from 'reportWebVitals'
+import reportWebVitals from './reportWebVitals'
 
 const { persistor, store } = configureStore()
 
