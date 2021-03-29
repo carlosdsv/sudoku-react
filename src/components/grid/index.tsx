@@ -7,17 +7,19 @@ import { createGrid, fillBlock, Reducer, selectBlock } from 'reducers'
 
 import Block from './block'
 import { Container, Row } from './styles'
-import { BlockCoordinates, Index, N, Numbers } from 'typings'
+import { BlockCoordinates, Grid, Index, N, Numbers } from 'typings'
 
 interface State {
   selectedBlock?: BlockCoordinates
   selectedValue: N
+  solvedGrid?: Grid
 }
 
 const SudokuGrid: FC = () => {
   const state = useSelector<Reducer, State>(
-    ({ selectedBlock, workingGrid }) => ({
+    ({ selectedBlock, solvedGrid, workingGrid }) => ({
       selectedBlock,
+      solvedGrid,
       selectedValue:
         workingGrid && selectedBlock
           ? workingGrid[selectedBlock[0]][selectedBlock[1]]
@@ -92,8 +94,10 @@ const SudokuGrid: FC = () => {
   useMousetrap('up', moveUp)
 
   useEffect(() => {
-    create()
-  }, [create])
+    if (!state.solvedGrid) {
+      create()
+    }
+  }, [create, state.solvedGrid])
 
   return (
     <Container data-cy="grid-container">
