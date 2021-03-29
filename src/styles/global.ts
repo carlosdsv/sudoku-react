@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components'
+import { Theme } from 'typings/theme'
 
-export default createGlobalStyle`
+export default createGlobalStyle<{ theme: Theme }>`
   ${({ theme }) => css`
     html {
       height: 100%;
