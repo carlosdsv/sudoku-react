@@ -1,5 +1,5 @@
-import { Grid } from 'typings'
-import { fillGrid } from 'utils'
+import { Grid } from '../../typings'
+import { fillGrid } from '../../utils'
 
 function createFullGrid(): Grid {
   const grid: Grid = [

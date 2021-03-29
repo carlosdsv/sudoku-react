@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import { Numbers } from 'typings'
+import { Numbers } from '../../typings'
 import Button from './button'
 import { Container } from './styles'
 

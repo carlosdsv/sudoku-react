@@ -1,4 +1,4 @@
-import { Grid } from 'typings'
+import { Grid } from '../../typings'
 
 function checkGrid(grid: Grid): boolean {
   for (let i = 0; i < 9; i++) {

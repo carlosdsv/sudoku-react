@@ -1,9 +1,9 @@
 import React, { FC, useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { AnyAction, Dispatch } from 'redux'
-import { Button } from 'components'
-import { fillBlock, Reducer } from 'reducers'
-import { Numbers, BlockCoordinates, N } from 'typings'
+import { Button } from '../../../components'
+import { fillBlock, Reducer } from '../../../reducers'
+import { Numbers, BlockCoordinates, N } from '../../../typings'
 
 interface NumberButtonProps {
   value: Numbers

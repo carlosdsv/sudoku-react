@@ -1,5 +1,5 @@
 import { Action, AnyAction } from 'redux'
-import { BlockCoordinates, Numbers } from 'typings'
+import { BlockCoordinates, Numbers } from '../typings'
 
 import * as types from './types'
 export const createGrid = (): Action => ({ type: types.CREATE_GRID })

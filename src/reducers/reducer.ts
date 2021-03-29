@@ -1,6 +1,11 @@
 import { AnyAction } from 'redux'
-import { Grid } from 'typings'
-import { compareArrays, copyGrid, createFullGrid, removeNumbers } from 'utils'
+import { Grid } from '../typings'
+import {
+  compareArrays,
+  copyGrid,
+  createFullGrid,
+  removeNumbers,
+} from '../utils'
 
 import { Reducer } from './interfaces'
 import * as types from './types'

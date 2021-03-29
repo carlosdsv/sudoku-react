@@ -1,4 +1,4 @@
-import { Grid, Numbers } from 'typings'
+import { Grid, Numbers } from '../../../typings'
 
 interface isInColumnProps {
   column: number

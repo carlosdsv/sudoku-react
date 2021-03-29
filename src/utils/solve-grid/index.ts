@@ -1,13 +1,13 @@
-import global from 'global'
+import global from '../../global'
 
-import { Grid, Numbers } from 'typings'
+import { Grid, Numbers } from '../../typings'
 import {
   checkGrid,
   identifySquare,
   isInColumn,
   isInRow,
   isInSquare,
-} from 'utils'
+} from '../../utils'
 
 const numbers: Numbers[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 /**

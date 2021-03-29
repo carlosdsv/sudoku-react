@@ -1,6 +1,6 @@
-import global from 'global'
-import { Grid } from 'typings'
-import { copyGrid, getRandomIndex, solveGrid } from 'utils'
+import global from '../../global'
+import { Grid } from '../../typings'
+import { copyGrid, getRandomIndex, solveGrid } from '../../utils'
 /**
  * Removes numbers from a full grid to create a Sudoku Puzzle
  * @param grid 9x9 Sudoku grid

@@ -1,4 +1,4 @@
-import { Grid, Numbers } from 'typings'
+import { Grid, Numbers } from '../../../typings'
 
 interface isInRowProps {
   grid: Grid

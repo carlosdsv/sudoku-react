@@ -2,8 +2,8 @@ import React, { FC, useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 import { Action, Dispatch } from 'redux'
 
-import { Button } from 'components'
-import { createGrid } from 'reducers'
+import { Button } from '../../components'
+import { createGrid } from '../../reducers'
 
 const NewGame: FC = () => {
   const dispatch = useDispatch<Dispatch<Action>>()

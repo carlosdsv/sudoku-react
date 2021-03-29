@@ -2,8 +2,8 @@ import React, { FC } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Dispatch, AnyAction } from 'redux'
 
-import { Reducer, selectBlock } from 'reducers'
-import { Index, N } from 'typings'
+import { Reducer, selectBlock } from '../../../reducers'
+import { Index, N } from '../../../typings'
 
 import { Container } from './styles'
 

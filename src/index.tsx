@@ -11,9 +11,9 @@ import {
   NumbersBar,
   SudokuGrid,
   Title,
-} from 'components'
-import { configureStore, register } from 'core'
-import { GlobalStyles, theme } from 'styles'
+} from './components'
+import { configureStore, register } from './core'
+import { GlobalStyles, theme } from './styles'
 
 import reportWebVitals from 'reportWebVitals'
 

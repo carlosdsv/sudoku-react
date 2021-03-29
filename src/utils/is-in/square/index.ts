@@ -1,4 +1,4 @@
-import { Numbers, Square } from 'typings'
+import { Numbers, Square } from '../../../typings'
 
 interface isInSquareProps {
   square: Square
